@@ -1,0 +1,11 @@
+body {
+    background-color: darkolivegreen;
+    width:50%;
+    border:1px solid black;
+  }
+  h1 {
+    color: #013da0;
+  }
+  p {
+    color: whitesmoke;
+  }
