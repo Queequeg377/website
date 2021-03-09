@@ -34,7 +34,7 @@ body {
     background: #ddd;
   }
   ul li.checked {
-    background: teal;
+    background: black;
     color: white;
     text-decoration: line-through;
   }
@@ -59,11 +59,11 @@ body {
   }
   
   .close:hover {
-    background-color: darkgreen;
+    background-color: darkslategray;
     color: white;
   }
   .header {
-    background-color: darkgreen;
+    background-color: darkslategray;
     padding: 30px 40px;
     color: white;
     text-align: center;
@@ -95,16 +95,15 @@ body {
     border-radius: 0;
   }
   .addBtn:hover {
-    background-color: #bbb;
+    background-color: azure;
   }
   #clear-list{
     width: 30%;
     font-weight: bold;
-    font-style: italic;
     font-size: xx-large;
-    font-family: "Times New Roman";
+    font-family: "Courier New";
     margin: 40px 35%;
-    background-color: darkgreen;
+    background-color: darkslategray;
     color: whitesmoke;
   }
   #clear-list:hover{
