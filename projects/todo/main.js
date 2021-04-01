@@ -3,12 +3,8 @@ document.getElementById("Bens-Button").addEventListener("click", function() {
   });
 
   document.getElementById("Add-Btn").addEventListener("click", function() {
-    var input=document.getElementById("myInput")
-    var ul=document.getElementById("myUL")
-    var li=document.createElement("li")
-    li.innerHTML=`${input.value} <button class="closebutton">X</button>`
-    input.value=""
-    ul.appendChild(li)
+addItem()
+
   });
 
   document.getElementById("myUL").addEventListener("click", function(e) {
@@ -17,4 +13,27 @@ document.getElementById("Bens-Button").addEventListener("click", function() {
 
 
 
-  })
+  });
+
+  document.getElementById("myInput").addEventListener("keypress", function(e) {
+    if (e.keyCode == 13) {
+      addItem()
+    }
+  });
+
+
+
+function addItem() {
+  var input=document.getElementById("myInput")
+    var ul=document.getElementById("myUL")
+    var li=document.createElement("li")
+    if (input.value == ""){
+      
+      return
+    
+    }
+    li.innerHTML=`${input.value} <button class="closebutton">X</button>`
+    input.value=""
+    ul.appendChild(li)
+
+}
